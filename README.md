@@ -63,26 +63,7 @@ Result
 
 ---
 
-## Example Output
 
-```text
-Enter Student Name : Yashwanth
-Enter Roll Number : 21
-
-Enter Marks of 3 Subjects
-Math : 90
-Physics : 85
-Chemistry : 95
-
------- Student Result ------
-Name : Yashwanth
-Roll Number : 21
-
-Total Marks : 270
-Average : 90
-```
-
----
 
 ## Concepts Used
 
