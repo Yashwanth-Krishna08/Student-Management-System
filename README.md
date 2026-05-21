@@ -1,77 +1,114 @@
-# Student Management System - README
-
+# Student Management System
 ## Overview
 
-This project is a simple **Student Management System** written in **C++** using **Object-Oriented Programming (OOP)** concepts.
+This project is a **Student Management System** developed in **C++** using **Object-Oriented Programming (OOP)** concepts and **STL vectors**.
 
-The program takes student details and marks as input, then calculates:
+The system allows users to manage multiple student records through a **menu-driven program**. Users can add students, display records, search students using roll number, and find the topper based on total marks.
 
-* Total Marks
-* Average Marks
+This project focuses on:
 
-This project mainly demonstrates the use of **Inheritance** in C++.
+* Class and Object usage
+* STL Vector
+* Searching and Traversing
+* Menu-Driven Programming
+* Result Calculation Logic
 
 ---
 
 ## Features
 
-* Add student details
-* Store subject marks
+* Add multiple students
+* Store student details and marks
 * Calculate total marks
-* Calculate average
-* Uses Inheritance
+* Calculate average marks
+* Display all students
+* Search student by roll number
+* Find topper student
+* Menu-driven interface
+* Uses STL `vector`
 
 ---
 
-## OOP Structure
+## Project Structure
 
-### Base Class: `Student`
+### Class: `Student`
 
 Stores:
 
 * Student Name
 * Roll Number
-
-### Derived Class: `Mark`
-
-Inherits from `Student`
-
-Stores:
-
 * Subject Marks
-
-### Derived Class: `Result`
-
-Inherits from `Mark`
-
-Calculates:
-
 * Total Marks
 * Average Marks
 
----
+The project stores multiple student objects using STL vectors.
 
-## Inheritance Flow
+Example:
 
-```text
-Student
-   ↓
-Mark
-   ↓
-Result
+```cpp id="qwtw1t"
+std::vector<Student> students;
 ```
 
 ---
 
+## STL Used
 
+### Vector
+
+The STL `vector` is used to:
+
+* Dynamically store multiple student records
+* Easily add new students
+* Traverse and manage data efficiently
+
+---
+
+## Menu Options
+
+```text id="c6nt0k"
+1. Add Student
+2. Display Students
+3. Search by Roll Number
+4. Find Topper
+5. Exit
+```
+
+---
+
+## Example Output
+
+```text id="zt7t1t"
+------ Student Management System ------
+
+1. Add Student
+2. Display Students
+3. Search by Roll Number
+4. Find Topper
+5. Exit
+
+Enter Choice : 1
+
+Enter Name : Yashwanth
+Enter Roll Number : 21
+
+Enter Marks
+Math : 90
+Physics : 85
+Chemistry : 95
+
+Student Added Successfully
+```
+
+---
 
 ## Concepts Used
 
-* C++ Classes
-* Objects
-* Inheritance
+* C++ Classes and Objects
+* STL Vector
 * Functions
-* Encapsulation
+* Loops
+* Searching Logic
+* Menu-Driven Programs
 * Input/Output Streams
 
 ---
@@ -88,7 +125,7 @@ Result
 
 ### Compile
 
-```bash
+```bash id="ej1ywa"
 g++ main.cpp -o main
 ```
 
@@ -96,13 +133,13 @@ g++ main.cpp -o main
 
 For Linux/Mac:
 
-```bash
+```bash id="p03d9v"
 ./main
 ```
 
 For Windows:
 
-```bash
+```bash id="mpdrdv"
 main.exe
 ```
 
@@ -110,7 +147,7 @@ main.exe
 
 ## File Structure
 
-```text
+```text id="gzc7di"
 project/
 │
 ├── main.cpp
@@ -121,12 +158,12 @@ project/
 
 ## Future Improvements
 
-* Store multiple students
-* File handling
-* Search by roll number
-* Sorting students using STL
-* Menu-driven system
-* Grade calculation
+* File handling for permanent storage
+* Update student details
+* Delete student records
+* Sorting students using custom comparator
+* Grade system
+* GUI version using C++ frameworks
 
 ---
 
@@ -134,13 +171,15 @@ project/
 
 By building this project, you can learn:
 
-* How inheritance works in C++
-* Basic OOP concepts
-* Data handling using classes
-* Result calculation logic
+* How to use STL vectors in real projects
+* Managing multiple objects in C++
+* Searching records efficiently
+* Menu-driven program design
+* Student data management logic
 
 ---
 
 ## Author
 
-Created by Yashwanth Krishna using C++ and OOP concepts.
+Created by Yashwanth Krishna using C++ and STL vectors.
+
